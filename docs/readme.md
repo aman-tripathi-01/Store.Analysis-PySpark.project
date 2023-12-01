@@ -12,6 +12,7 @@ my_project/
 │   └── readme.md
 ├── resources/
 │   ├── __init__.py
+
 │   ├── dev/
 │   │    ├── config.py
 │   │    └── requirement.txt
@@ -66,7 +67,7 @@ my_project/
 
 
 Project Architecture:-
-![Architecture](C:\Users\nikita\Pictures\Screenshots\architecture.png)
+![Project Architecture](https://github.com/aman-tripathi-01/Store.Analysis-PySpark.project/assets/31034814/26c0ac62-ff7f-49bd-8a87-2c41e445b4a2)
 
 Database ER Diagram:-
 ![Architecture](C:\Users\nikita\Documents\data_engineering\pythonProject\youtube_project\docs\database_schema.drawio.png)
