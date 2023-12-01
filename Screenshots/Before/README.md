@@ -12,12 +12,16 @@
 6. Sales Partitioned Data: The processsed sales people data will be partitioned by month and store_id and then saved here in parquet format.
    ![image](https://github.com/aman-tripathi-01/Store.Analysis-PySpark.project/assets/31034814/14f8020c-fad6-4c3a-be8b-4e7a059ce146)
 
+Uploaded Sales Data to S3:
+![image](https://github.com/aman-tripathi-01/Store.Analysis-PySpark.project/assets/31034814/46bb17c0-3a96-48cd-913c-9c981ef2bc28)
+![image](https://github.com/aman-tripathi-01/Store.Analysis-PySpark.project/assets/31034814/cc86700e-8bc6-4611-932f-06fa8771ef62)
+
 ### MySQL:
 1. Customers Data Mart:
    
    ![image](https://github.com/aman-tripathi-01/Store.Analysis-PySpark.project/assets/31034814/09f8593c-83ef-4c12-a1bf-e9426cdc5bdf)
 2. Sales Team Data Mart:
-   
+
    ![image](https://github.com/aman-tripathi-01/Store.Analysis-PySpark.project/assets/31034814/e50ca844-0bd8-4abe-882f-1b0c8bd0e8e5)
 
 
