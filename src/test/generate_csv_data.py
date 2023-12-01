@@ -38,7 +38,7 @@ start_date = datetime(2021, 2, 10)
 end_date = datetime(2023, 10, 22)
 
 file_location = "D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\sales_data_to_s3"
-csv_file_path = os.path.join(file_location, "sales_data.csv")
+csv_file_path = os.path.join(file_location, "sales_data5.csv")
 with open(csv_file_path, "w", newline="") as csvfile:
     csvwriter = csv.writer(csvfile)
     csvwriter.writerow(
@@ -54,7 +54,7 @@ with open(csv_file_path, "w", newline="") as csvfile:
         ]
     )
 
-    for _ in range(50560):
+    for _ in range(1996985):
         customer_id = random.choice(customer_ids)
         store_id = random.choice(store_ids)
         product_name = random.choice(list(product_data.keys()))
