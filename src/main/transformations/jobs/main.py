@@ -403,9 +403,7 @@ update_statements = []
 if correct_files:
     for file in correct_files:
         filename = os.path.basename(file)
-        statement = f""" UPDATE {db_name}.{config.product_staging_table} SET status = 'I',\
-                         updated_date = '{formatted_date}' where file_name = '{filename}';
-                    """
+        statement = f""" UPDATE {db_name}.{config.product_staging_table} SET status = 'I', updated_date = '{formatted_date}' where file_name = '{filename}';"""
         update_statements.append(statement)
 
     logger.info(f"Update statement created for staging table: {update_statements}")

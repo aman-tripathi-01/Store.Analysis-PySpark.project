@@ -6,12 +6,13 @@ class DatabaseWriter:
         self.url = url
         self.properties = properties
 
+    # We can use the mode = "append" as well.
     def write_dataframe(self, df, table_name):
         try:
             df.write.jdbc(
                 url=self.url,
                 table=table_name,
-                mode="append",
+                mode="overwrite",
                 properties=self.properties,
             )
             logger.info(f"Data successfully written into {table_name} table ")

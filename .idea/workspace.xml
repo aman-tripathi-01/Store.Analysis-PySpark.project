@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="05392e02-42c0-4e64-b7a1-f9aaf770e852" name="Changes" comment="Committing the entire project - 1st commit.">
+      <changelist_data name="Aman Tripathi" email="" />
+      <change afterPath="$PROJECT_DIR$/data/datewise_sale_data/sales_data_2023-07-12.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sales_data_to_s3/sales_data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sales_data_to_s3/sales_data1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sales_data_to_s3/sales_data2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sales_data_to_s3/sales_data3.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sales_data_to_s3/sales_data5.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sales_data_to_s3/sales_data6.csv1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sales_data_to_s3/sales_data_2023-12-12.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/transformations/jobs/dimenssion_tables_join.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/write/spark_writer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/generate_product_table_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/generate_sales_team_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/dev/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/dev/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sql_scripts/table_scripts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sql_scripts/table_scripts.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/delete/database_delete.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/move/move_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/move/move_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/read/aws_read.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/read/aws_read.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/transformations/jobs/customer_mart_sql_tranform_write.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/transformations/jobs/customer_mart_sql_tranform_write.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/transformations/jobs/dimension_tables_join.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/transformations/jobs/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/transformations/jobs/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/transformations/jobs/sales_team_mart_sql_transform_write.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/transformations/jobs/sales_team_mart_sql_transform_write.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/upload/upload_to_s3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/upload/upload_to_s3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/utility/encrypt_decrypt.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utility/encrypt_decrypt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/utility/logging_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utility/logging_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/utility/my_sql_session.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utility/my_sql_session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/utility/spark_session.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utility/spark_session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/write/database_write.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/write/database_write.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/write/parquet_writer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/extra_column_csv_generated_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/extra_column_csv_generated_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/generate_csv_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/generate_csv_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/generate_customer_table_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/generate_customer_table_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/generate_datewise_sales_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/generate_datewise_sales_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/less_column_csv_generated_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/less_column_csv_generated_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/sales_data_upload_s3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/sales_data_upload_s3.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Aman Tripathi" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/transformations/jobs/main.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2X8o6MdZoGUCz3rEaYJDZIOYXIy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/PycharmProjects/Spark_project_1&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="generate_csv_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="youtube_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test/generate_csv_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="youtube_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/transformations/jobs" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/transformations/jobs/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.generate_csv_data" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05392e02-42c0-4e64-b7a1-f9aaf770e852" name="Changes" comment="" />
+      <created>1698019891252</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698019891252</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Committing the entire project - 1st commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Committing the entire project - 1st commit." />
+  </component>
+</project>

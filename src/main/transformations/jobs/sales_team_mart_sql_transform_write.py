@@ -37,21 +37,28 @@ def sales_team_mart_calculation_table_write(final_sales_team_data_mart_df):
         )
         .withColumn("incentive", round(col("incentive"), 2))
         .withColumn("total_sales", col("total_sales_monthly"))
-        .select("store_id", "sales_person_id", "total_sales", "incentive")
+        .select(
+            "store_id",
+            "sales_person_id",
+            "full_name",
+            "sale_month",
+            "total_sales",
+            "incentive"
+        ).distinct()
     )
     print(final_sales_team_data_mart_table.show(5))
     print(final_sales_team_data_mart_table.count())
 
     logging.info("Writing data into sales_team_data mart table in SQL")
     # Write the Data into MySQL customers_data_mart table
-    statement = f"""truncate table {config.sales_team_data_mart_table}"""
-    connection = get_mysql_connection()
-    cursor = connection.cursor()
-    cursor.execute(statement)
-    connection.commit()
+    # statement = f"""truncate table {config.sales_team_data_mart_table}"""
+    # connection = get_mysql_connection()
+    # cursor = connection.cursor()
+    # cursor.execute(statement)
+    # connection.commit()
     db_writer = DatabaseWriter(url=config.url, properties=config.properties)
     db_writer.write_dataframe(
         final_sales_team_data_mart_table, config.sales_team_data_mart_table
     )
-    cursor.close()
-    connection.close()
+    # cursor.close()
+    # connection.close()

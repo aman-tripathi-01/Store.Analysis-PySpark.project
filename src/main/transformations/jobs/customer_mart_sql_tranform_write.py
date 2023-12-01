@@ -1,5 +1,7 @@
+import logging
 from pyspark.sql.functions import *
 from pyspark.sql.window import Window
+from pyspark.sql.types import *
 from resources.dev import config
 from src.main.utility.my_sql_session import get_mysql_connection
 from src.main.write.database_write import DatabaseWriter
@@ -21,7 +23,7 @@ def customer_mart_calculation_table_write(final_customer_data_mart_df):
             concat(
                 col("customer_first_name"), lit(" "), col("customer_last_name")
             ).alias("full_name"),
-            "customer_address",
+            col("customer_address").alias("address"),
             "phone_number",
             "purchase_month",
             col("total_purchase_every_month_by_each_customer").alias("total_purchase"),
@@ -32,12 +34,8 @@ def customer_mart_calculation_table_write(final_customer_data_mart_df):
     print(final_customer_data_mart.count())
 
     # Write the Data into MySQL customers_data_mart table
-    statement = f"""truncate table {config.customer_data_mart_table}"""
-    connection = get_mysql_connection()
-    cursor = connection.cursor()
-    cursor.execute(statement)
-    connection.commit()
+
     db_writer = DatabaseWriter(url=config.url, properties=config.properties)
-    db_writer.write_dataframe(final_customer_data_mart, config.customer_data_mart_table)
-    cursor.close()
-    connection.close()
+    db_writer.write_dataframe(
+        final_customer_data_mart, config.customer_data_mart_table
+    )
