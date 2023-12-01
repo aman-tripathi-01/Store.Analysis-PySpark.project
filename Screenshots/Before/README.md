@@ -23,5 +23,3 @@ Uploaded Sales Data to S3:
 2. Sales Team Data Mart:
 
    ![image](https://github.com/aman-tripathi-01/Store.Analysis-PySpark.project/assets/31034814/e50ca844-0bd8-4abe-882f-1b0c8bd0e8e5)
-
-
