@@ -1,0 +1,271 @@
+D:\Projects\PycharmProjects\Spark_project_1\my_venv\Scripts\python.exe D:\Projects\PycharmProjects\Spark_project_1\src\main\transformations\jobs\main.py 
+2023-12-02 02:14:06,323 - INFO - List of Buckets: [{'Name': 'geolocation-etl-project', 'CreationDate': datetime.datetime(2023, 9, 17, 13, 39, 38, tzinfo=tzutc())}, {'Name': 'pyspark.project', 'CreationDate': datetime.datetime(2023, 9, 23, 15, 35, 16, tzinfo=tzutc())}, {'Name': 'spotify-etl.project', 'CreationDate': datetime.datetime(2023, 8, 26, 7, 33, 52, tzinfo=tzutc())}]
+2023-12-02 02:14:06,354 - INFO - Last run was successful.
+2023-12-02 02:14:06,633 - INFO - Total files available in folder 'sales_data/' of bucket 'pyspark.project': {'ResponseMetadata': {'RequestId': 'EMVJ69B74MQHRQWE', 'HostId': 'cepMreri5AWQBO8lD2q4jsFngT2qhbIbhwatFItGH/zinWsla/hxyVCGXSqTeBPaZZKq8faW0Pg=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'cepMreri5AWQBO8lD2q4jsFngT2qhbIbhwatFItGH/zinWsla/hxyVCGXSqTeBPaZZKq8faW0Pg=', 'x-amz-request-id': 'EMVJ69B74MQHRQWE', 'date': 'Fri, 01 Dec 2023 20:44:06 GMT', 'x-amz-bucket-region': 'us-east-1', 'content-type': 'application/xml', 'transfer-encoding': 'chunked', 'server': 'AmazonS3'}, 'RetryAttempts': 0}, 'IsTruncated': False, 'Contents': [{'Key': 'sales_data/extra_column_sales_data_2023-11-13.csv', 'LastModified': datetime.datetime(2023, 12, 1, 20, 36, 41, tzinfo=tzutc()), 'ETag': '"69448c3e928fdbd2cc0fecf89d1da46f"', 'Size': 3422212, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/less_column_sales_data_2023-11-14.csv', 'LastModified': datetime.datetime(2023, 12, 1, 20, 37, 43, tzinfo=tzutc()), 'ETag': '"c960414d9355d062711a37eb3c8b99e5-3"', 'Size': 22314645, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/sales_data.csv', 'LastModified': datetime.datetime(2023, 12, 1, 20, 40, 15, tzinfo=tzutc()), 'ETag': '"bfc36c503ba13dbbe1022d30947bf60e"', 'Size': 2106602, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/sales_data.json', 'LastModified': datetime.datetime(2023, 12, 1, 20, 40, 37, tzinfo=tzutc()), 'ETag': '"9166d016ea9f9502096b332634aae95f"', 'Size': 397769, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/sales_data2.csv', 'LastModified': datetime.datetime(2023, 12, 1, 20, 40, 44, tzinfo=tzutc()), 'ETag': '"c94fd3495326ecab376f287e2fbeaa48"', 'Size': 2523860, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/sales_data3.csv1', 'LastModified': datetime.datetime(2023, 12, 1, 20, 41, 33, tzinfo=tzutc()), 'ETag': '"2233800d987eac18ccd1bc9988c38ff5"', 'Size': 314678, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/sales_data4.json', 'LastModified': datetime.datetime(2023, 12, 1, 20, 41, 40, tzinfo=tzutc()), 'ETag': '"808a2ee23b03da87c126365e09482db4-8"', 'Size': 59440254, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/sales_data5.csv', 'LastModified': datetime.datetime(2023, 12, 1, 20, 42, 19, tzinfo=tzutc()), 'ETag': '"6345699aaf7b23b5134d130e729a55af-10"', 'Size': 83169532, 'StorageClass': 'STANDARD'}], 'Name': 'pyspark.project', 'Prefix': 'sales_data/', 'MaxKeys': 1000, 'EncodingType': 'url', 'KeyCount': 8}
+2023-12-02 02:14:06,633 - INFO - Absolute Path of S3 bucket for csv file: ['s3://pyspark.project/sales_data/extra_column_sales_data_2023-11-13.csv', 's3://pyspark.project/sales_data/less_column_sales_data_2023-11-14.csv', 's3://pyspark.project/sales_data/sales_data.csv', 's3://pyspark.project/sales_data/sales_data.json', 's3://pyspark.project/sales_data/sales_data2.csv', 's3://pyspark.project/sales_data/sales_data3.csv1', 's3://pyspark.project/sales_data/sales_data4.json', 's3://pyspark.project/sales_data/sales_data5.csv']
+2023-12-02 02:14:06,633 - INFO - File path available on S3 under 'pyspark.project' bucket and folder name is ['sales_data/extra_column_sales_data_2023-11-13.csv', 'sales_data/less_column_sales_data_2023-11-14.csv', 'sales_data/sales_data.csv', 'sales_data/sales_data.json', 'sales_data/sales_data2.csv', 'sales_data/sales_data3.csv1', 'sales_data/sales_data4.json', 'sales_data/sales_data5.csv']
+2023-12-02 02:14:06,633 - INFO - Running download files for these files ['sales_data/extra_column_sales_data_2023-11-13.csv', 'sales_data/less_column_sales_data_2023-11-14.csv', 'sales_data/sales_data.csv', 'sales_data/sales_data.json', 'sales_data/sales_data2.csv', 'sales_data/sales_data3.csv1', 'sales_data/sales_data4.json', 'sales_data/sales_data5.csv']
+2023-12-02 02:14:06,633 - INFO - File name extra_column_sales_data_2023-11-13.csv 
+2023-12-02 02:14:18,306 - INFO - File name less_column_sales_data_2023-11-14.csv 
+2023-12-02 02:15:00,208 - INFO - File name sales_data.csv 
+2023-12-02 02:15:07,571 - INFO - File name sales_data.json 
+2023-12-02 02:15:09,524 - INFO - File name sales_data2.csv 
+2023-12-02 02:15:18,723 - INFO - File name sales_data3.csv1 
+2023-12-02 02:15:20,568 - INFO - File name sales_data4.json 
+2023-12-02 02:15:47,752 - INFO - File name sales_data5.csv 
+2023-12-02 02:16:19,621 - INFO - List of file present at my local directory are: ['extra_column_sales_data_2023-11-13.csv', 'less_column_sales_data_2023-11-14.csv', 'sales_data.csv', 'sales_data.json', 'sales_data2.csv', 'sales_data3.csv1', 'sales_data4.json', 'sales_data5.csv']
+2023-12-02 02:16:19,621 - INFO - ************************ Listing the CSV files ************************
+2023-12-02 02:16:19,621 - INFO - List of csv files to process: ['D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\file_from_s3\\extra_column_sales_data_2023-11-13.csv', 'D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\file_from_s3\\less_column_sales_data_2023-11-14.csv', 'D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\file_from_s3\\sales_data.csv', 'D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\file_from_s3\\sales_data2.csv', 'D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\file_from_s3\\sales_data5.csv']
+2023-12-02 02:16:19,621 - INFO - ************************ Creating Spark session ************************
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2023-12-02 02:16:26,224 - INFO - spark session <pyspark.sql.session.SparkSession object at 0x0000021CF96FC100>
+2023-12-02 02:16:26,224 - INFO - ************************ Spark session created successfully ************************
+2023-12-02 02:16:26,224 - INFO - ************************ checking Schema in files downloaded from S3 ************************
+2023-12-02 02:16:33,630 - INFO - Schema for the extra_column_sales_data_2023-11-13.csv is ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost', 'payment_mode']
+2023-12-02 02:16:33,630 - INFO - No missing column in extra_column_sales_data_2023-11-13.csv
+2023-12-02 02:16:34,008 - INFO - Schema for the less_column_sales_data_2023-11-14.csv is ['customer_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost', 'payment_mode']
+2023-12-02 02:16:34,008 - WARNING - Missing columns are {'store_id'} in file: D:\Projects\PycharmProjects\Spark_project_1\data\file_from_s3\less_column_sales_data_2023-11-14.csv
+2023-12-02 02:16:34,366 - INFO - Schema for the sales_data.csv is ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2023-12-02 02:16:34,366 - INFO - No missing column in sales_data.csv
+2023-12-02 02:16:34,626 - INFO - Schema for the sales_data2.csv is ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2023-12-02 02:16:34,626 - INFO - No missing column in sales_data2.csv
+2023-12-02 02:16:34,916 - INFO - Schema for the sales_data5.csv is ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2023-12-02 02:16:34,916 - INFO - No missing column in sales_data5.csv
+2023-12-02 02:16:34,916 - INFO - *********** List of correct files: *********** ['D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\file_from_s3\\extra_column_sales_data_2023-11-13.csv', 'D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\file_from_s3\\sales_data.csv', 'D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\file_from_s3\\sales_data2.csv', 'D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\file_from_s3\\sales_data5.csv']
+2023-12-02 02:16:34,916 - INFO - *********** List of error files: *********** ['D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\file_from_s3\\sales_data.json', 'D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\file_from_s3\\sales_data3.csv1', 'D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\file_from_s3\\sales_data4.json', 'D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\file_from_s3\\less_column_sales_data_2023-11-14.csv']
+2023-12-02 02:16:34,919 - INFO - On Local: Moved error file sales_data.json to D:\Projects\PycharmProjects\Spark_project_1\data\error_files\sales_data.json
+2023-12-02 02:16:37,019 - INFO - Moved file: sales_data/sales_data.json to sales_data_error/sales_data.json
+2023-12-02 02:16:37,019 - INFO - On S3: Data Moved successfully from sales_data/ to sales_data_error/
+2023-12-02 02:16:37,023 - INFO - On Local: Moved error file sales_data3.csv1 to D:\Projects\PycharmProjects\Spark_project_1\data\error_files\sales_data3.csv1
+2023-12-02 02:16:37,997 - INFO - Moved file: sales_data/sales_data3.csv1 to sales_data_error/sales_data3.csv1
+2023-12-02 02:16:37,997 - INFO - On S3: Data Moved successfully from sales_data/ to sales_data_error/
+2023-12-02 02:16:38,069 - INFO - On Local: Moved error file sales_data4.json to D:\Projects\PycharmProjects\Spark_project_1\data\error_files\sales_data4.json
+2023-12-02 02:16:40,746 - INFO - Moved file: sales_data/sales_data4.json to sales_data_error/sales_data4.json
+2023-12-02 02:16:40,746 - INFO - On S3: Data Moved successfully from sales_data/ to sales_data_error/
+2023-12-02 02:16:40,790 - INFO - On Local: Moved error file less_column_sales_data_2023-11-14.csv to D:\Projects\PycharmProjects\Spark_project_1\data\error_files\less_column_sales_data_2023-11-14.csv
+2023-12-02 02:16:42,748 - INFO - Moved file: sales_data/less_column_sales_data_2023-11-14.csv to sales_data_error/less_column_sales_data_2023-11-14.csv
+2023-12-02 02:16:42,748 - INFO - On S3: Data Moved successfully from sales_data/ to sales_data_error/
+2023-12-02 02:16:42,748 - INFO - *********** Updating product_staging_table with status that the process is started  ***********
+2023-12-02 02:16:42,752 - INFO - Insert statement created: ["        INSERT INTO spark_project.product_staging_table        (file_name, file_location, created_date, status)        VALUES ('extra_column_sales_data_2023-11-13.csv', 'D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\file_from_s3\\extra_column_sales_data_2023-11-13.csv', '2023-12-02 02:16:42', 'A')      \n        ", "        INSERT INTO spark_project.product_staging_table        (file_name, file_location, created_date, status)        VALUES ('sales_data.csv', 'D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\file_from_s3\\sales_data.csv', '2023-12-02 02:16:42', 'A')      \n        ", "        INSERT INTO spark_project.product_staging_table        (file_name, file_location, created_date, status)        VALUES ('sales_data2.csv', 'D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\file_from_s3\\sales_data2.csv', '2023-12-02 02:16:42', 'A')      \n        ", "        INSERT INTO spark_project.product_staging_table        (file_name, file_location, created_date, status)        VALUES ('sales_data5.csv', 'D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\file_from_s3\\sales_data5.csv', '2023-12-02 02:16:42', 'A')      \n        "]
+2023-12-02 02:16:42,752 - INFO - ************* Connecting with MySQL server *************
+2023-12-02 02:16:42,769 - INFO - ************* Connected to MySQL successfully. *************
+2023-12-02 02:16:42,788 - INFO - ************* Staging table updated successfully. *************
+2023-12-02 02:16:42,788 - INFO - ************* Fixing extra columns coming from source *************
+2023-12-02 02:16:43,957 - INFO - Extra columns present in extra_column_sales_data_2023-11-13.csv: ['payment_mode']
+2023-12-02 02:16:44,048 - INFO - Processed D:\Projects\PycharmProjects\Spark_project_1\data\file_from_s3\extra_column_sales_data_2023-11-13.csv and added additional column.
+2023-12-02 02:16:44,755 - INFO - Extra columns present in sales_data.csv: []
+2023-12-02 02:16:45,488 - INFO - Extra columns present in sales_data2.csv: []
+2023-12-02 02:16:47,546 - INFO - Extra columns present in sales_data5.csv: []
+2023-12-02 02:16:47,610 - INFO - ************* Final DataFrame that will be processed from source *************
+2023-12-02 02:16:47,610 - INFO - Loading customer table into customer_table_df
+2023-12-02 02:16:48,419 - INFO - Loading product table into product_table_df
+2023-12-02 02:16:48,470 - INFO - Loading product staging table into product_staging_table_df
+2023-12-02 02:16:48,519 - INFO - Loading sales_team table into sales_team_table_df
+2023-12-02 02:16:48,562 - INFO - Loading store table into store_table_df
+2023-12-02 02:16:48,597 - INFO - ******************* Joining tables *******************
+2023-12-02 02:16:48,597 - INFO - Joining the final_df_to_process with customer_table_df 
+2023-12-02 02:16:48,742 - INFO - Joining the s3_customer_df_join with sales_team_table_df 
+root
+ |-- customer_id: integer (nullable = true)
+ |-- store_id: integer (nullable = true)
+ |-- sales_date: date (nullable = true)
+ |-- sales_person_id: integer (nullable = true)
+ |-- total_cost: float (nullable = true)
+ |-- additional_columns: string (nullable = true)
+ |-- customer_first_name: string (nullable = true)
+ |-- customer_last_name: string (nullable = true)
+ |-- customer_address: string (nullable = true)
+ |-- customer_pincode: string (nullable = true)
+ |-- phone_number: string (nullable = true)
+
+None
+2023-12-02 02:16:48,834 - INFO - Joining the s3_customer_sales_df_join with store_table_df
+root
+ |-- customer_id: integer (nullable = true)
+ |-- store_id: integer (nullable = true)
+ |-- sales_date: date (nullable = true)
+ |-- sales_person_id: integer (nullable = true)
+ |-- total_cost: float (nullable = true)
+ |-- additional_columns: string (nullable = true)
+ |-- customer_first_name: string (nullable = true)
+ |-- customer_last_name: string (nullable = true)
+ |-- customer_address: string (nullable = true)
+ |-- customer_pincode: string (nullable = true)
+ |-- phone_number: string (nullable = true)
+ |-- sales_person_first_name: string (nullable = true)
+ |-- sales_person_last_name: string (nullable = true)
+ |-- manager_id: integer (nullable = true)
+ |-- is_manager: string (nullable = true)
+ |-- sales_person_address: string (nullable = true)
+ |-- sales_person_pincode: string (nullable = true)
+
+None
+root
+ |-- customer_id: integer (nullable = true)
+ |-- store_id: integer (nullable = true)
+ |-- sales_date: date (nullable = true)
+ |-- sales_person_id: integer (nullable = true)
+ |-- total_cost: float (nullable = true)
+ |-- additional_columns: string (nullable = true)
+ |-- customer_first_name: string (nullable = true)
+ |-- customer_last_name: string (nullable = true)
+ |-- customer_address: string (nullable = true)
+ |-- customer_pincode: string (nullable = true)
+ |-- phone_number: string (nullable = true)
+ |-- sales_person_first_name: string (nullable = true)
+ |-- sales_person_last_name: string (nullable = true)
+ |-- manager_id: integer (nullable = true)
+ |-- is_manager: string (nullable = true)
+ |-- sales_person_address: string (nullable = true)
+ |-- sales_person_pincode: string (nullable = true)
+ |-- store_address: string (nullable = true)
+ |-- store_pincode: string (nullable = true)
+ |-- store_manager_name: string (nullable = true)
+ |-- store_opening_date: date (nullable = true)
+ |-- reviews: string (nullable = true)
+
+None
+2023-12-02 02:17:14,624 - INFO - *********** Final Enriched Data count: 1100373 ***********
+2023-12-02 02:17:14,625 - INFO - *********** Writing data to Customer Data Mart ***********
+2023-12-02 02:17:14,663 - INFO - Final Data for Customer Data Mart
++-----------+-------------------+------------------+----------------+----------------+--------------+----------+----------+
+|customer_id|customer_first_name|customer_last_name|customer_address|customer_pincode|  phone_number|sales_date|total_cost|
++-----------+-------------------+------------------+----------------+----------------+--------------+----------+----------+
+|         31|             Damini|              Bala|            Pune|          411012|+91-7888870478|2022-04-18|     770.0|
+|         31|             Damini|              Bala|            Pune|          411012|+91-7888870478|2021-08-15|    2296.0|
+|         31|             Damini|              Bala|            Pune|          411012|+91-7888870478|2022-07-26|     690.0|
+|         31|             Damini|              Bala|            Pune|          411012|+91-7888870478|2023-09-06|     600.0|
+|         31|             Damini|              Bala|            Pune|          411012|+91-7888870478|2021-03-24|      40.0|
++-----------+-------------------+------------------+----------------+----------------+--------------+----------+----------+
+only showing top 5 rows
+
+None
+2023-12-02 02:17:59,444 - INFO - Customer Data written to local disk.
+2023-12-02 02:17:59,444 - INFO - Moving customer data to S3...
+2023-12-02 02:18:57,900 - INFO - Data Successfully uploaded in customer_data_mart/ data mart 
+2023-12-02 02:18:57,900 - INFO - *********** Writing data to Sales team Data Mart ***********
+2023-12-02 02:18:58,194 - INFO - Final Data for Sales team Data Mart
++---------------+-----------------------+----------------------+------------------+----------+----------+--------------------+--------------------+--------+----------+----------+----------+
+|sales_person_id|sales_person_first_name|sales_person_last_name|store_manager_name|manager_id|is_manager|sales_person_address|sales_person_pincode|store_id|total_cost|sales_date|sale_month|
++---------------+-----------------------+----------------------+------------------+----------+----------+--------------------+--------------------+--------+----------+----------+----------+
+|              6|                Mamooty|                 Kanda|            Nikita|         3|         N|                Pune|              411037|     572|     770.0|2022-04-18|   2022-04|
+|              6|                Mamooty|                 Kanda|            Nikita|         3|         N|                Pune|              411037|     572|    2296.0|2021-08-15|   2021-08|
+|              6|                Mamooty|                 Kanda|            Nikita|         3|         N|                Pune|              411037|     572|     690.0|2022-07-26|   2022-07|
+|              6|                Mamooty|                 Kanda|            Nikita|         3|         N|                Pune|              411037|     572|     600.0|2023-09-06|   2023-09|
+|              6|                Mamooty|                 Kanda|            Nikita|         3|         N|                Pune|              411037|     572|      40.0|2021-03-24|   2021-03|
++---------------+-----------------------+----------------------+------------------+----------+----------+--------------------+--------------------+--------+----------+----------+----------+
+only showing top 5 rows
+
+None
+2023-12-02 02:19:42,245 - INFO - Sales team Data written to local disk.
+2023-12-02 02:19:42,245 - INFO - Moving Sales team data to S3...
+2023-12-02 02:20:37,909 - INFO - Data Successfully uploaded in sales_data_mart/ data mart 
+2023-12-02 02:21:01,209 - INFO - Sales team Data written to local disk.
+2023-12-02 02:21:01,209 - INFO - Moving Sales team data to S3...
+2023-12-02 02:24:31,961 - INFO - Data Successfully uploaded in sales_partitioned_data_mart/ data mart 
+2023-12-02 02:24:31,961 - INFO - Calculating total_purchased_amount for each customer per month
++-----------+--------------+-------+--------------+--------------+--------------+
+|customer_id|     full_name|address|  phone_number|purchase_month|total_purchase|
++-----------+--------------+-------+--------------+--------------+--------------+
+|          1|  Nirvi D’Alia|   Pune|+91-7856831395|       2021-10|      772818.0|
+|          1|  Nirvi D’Alia|   Pune|+91-7856831395|       2021-12|      802534.0|
+|          2|Onkar Sachdeva|   Pune|+91-7836947872|       2022-07|      716485.0|
+|          3| Manikya Lalla|   Pune|+91-9840753318|       2022-03|      742463.0|
+|          4| Saanvi Sarraf|   Pune|+91-9861232318|       2021-10|      671205.0|
++-----------+--------------+-------+--------------+--------------+--------------+
+only showing top 5 rows
+
+None
+1650
+2023-12-02 02:25:40,034 - INFO - Data successfully written into customers_data_mart table 
+2023-12-02 02:25:40,034 - INFO - Calculation of customer's monthly expenditure done and data written to MySQL.
+2023-12-02 02:25:40,034 - INFO - Calculating total_sales for each member of sales_team per month
++--------+---------------+-------------+----------+-----------+---------+
+|store_id|sales_person_id|    full_name|sale_month|total_sales|incentive|
++--------+---------------+-------------+----------+-----------+---------+
+|     572|              6|Mamooty Kanda|   2021-02|  1445669.0| 14456.69|
+|     572|              4|  Badal Saraf|   2021-02|  1434882.0|      0.0|
+|     572|              5|  Divij Bajaj|   2021-02|  1424313.0|      0.0|
+|     572|              5|  Divij Bajaj|   2021-03|  2566199.0| 25661.99|
+|     572|              4|  Badal Saraf|   2021-03|  2436783.0|      0.0|
++--------+---------------+-------------+----------+-----------+---------+
+only showing top 5 rows
+
+None
+2023-12-02 02:26:22,941 - INFO - Writing data into sales_team_data mart table in SQL
+495
+2023-12-02 02:26:43,963 - INFO - Data successfully written into sales_team_data_mart table 
+2023-12-02 02:26:43,963 - INFO - Calculation of customer's monthly expenditure done and data written to MySQL.
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\file_from_s3\extra_column_sales_data_2023-11-13.csv
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\file_from_s3\sales_data.csv
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\file_from_s3\sales_data2.csv
+2023-12-02 02:26:52,516 - INFO - Data Moved successfully from sales_data/ to sales_data_processed/
+2023-12-02 02:26:52,519 - INFO - ****************** Deleting Local files ******************
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\file_from_s3\sales_data5.csv
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\customer_data_mart\.part-00000-d3047452-22fb-4298-a9ea-8dc915ba154e-c000.snappy.parquet.crc
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\customer_data_mart\.part-00001-d3047452-22fb-4298-a9ea-8dc915ba154e-c000.snappy.parquet.crc
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\customer_data_mart\.part-00002-d3047452-22fb-4298-a9ea-8dc915ba154e-c000.snappy.parquet.crc
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\customer_data_mart\.part-00003-d3047452-22fb-4298-a9ea-8dc915ba154e-c000.snappy.parquet.crc
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\customer_data_mart\.part-00004-d3047452-22fb-4298-a9ea-8dc915ba154e-c000.snappy.parquet.crc
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\customer_data_mart\._SUCCESS.crc
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\customer_data_mart\part-00000-d3047452-22fb-4298-a9ea-8dc915ba154e-c000.snappy.parquet
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\customer_data_mart\part-00001-d3047452-22fb-4298-a9ea-8dc915ba154e-c000.snappy.parquet
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\customer_data_mart\part-00002-d3047452-22fb-4298-a9ea-8dc915ba154e-c000.snappy.parquet
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\customer_data_mart\part-00003-d3047452-22fb-4298-a9ea-8dc915ba154e-c000.snappy.parquet
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\customer_data_mart\part-00004-d3047452-22fb-4298-a9ea-8dc915ba154e-c000.snappy.parquet
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\customer_data_mart\_SUCCESS
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\sales_team_data_mart\.part-00000-638eca84-ece2-4417-9bff-fe934de6205b-c000.snappy.parquet.crc
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\sales_team_data_mart\.part-00001-638eca84-ece2-4417-9bff-fe934de6205b-c000.snappy.parquet.crc
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\sales_team_data_mart\.part-00002-638eca84-ece2-4417-9bff-fe934de6205b-c000.snappy.parquet.crc
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\sales_team_data_mart\.part-00003-638eca84-ece2-4417-9bff-fe934de6205b-c000.snappy.parquet.crc
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\sales_team_data_mart\.part-00004-638eca84-ece2-4417-9bff-fe934de6205b-c000.snappy.parquet.crc
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\sales_team_data_mart\._SUCCESS.crc
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\sales_team_data_mart\part-00000-638eca84-ece2-4417-9bff-fe934de6205b-c000.snappy.parquet
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\sales_team_data_mart\part-00001-638eca84-ece2-4417-9bff-fe934de6205b-c000.snappy.parquet
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\sales_team_data_mart\part-00002-638eca84-ece2-4417-9bff-fe934de6205b-c000.snappy.parquet
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\sales_team_data_mart\part-00003-638eca84-ece2-4417-9bff-fe934de6205b-c000.snappy.parquet
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\sales_team_data_mart\part-00004-638eca84-ece2-4417-9bff-fe934de6205b-c000.snappy.parquet
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\sales_team_data_mart\_SUCCESS
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\._SUCCESS.crc
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2021-02
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2021-03
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2021-04
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2021-05
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2021-06
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2021-07
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2021-08
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2021-09
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2021-10
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2021-11
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2021-12
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2022-01
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2022-02
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2022-03
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2022-04
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2022-05
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2022-06
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2022-07
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2022-08
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2022-09
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2022-10
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2022-11
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2022-12
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2023-01
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2023-02
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2023-03
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2023-04
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2023-05
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2023-06
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2023-07
+2023-12-02 02:26:52,695 - INFO - Update statement created for staging table: [" UPDATE spark_project.product_staging_table SET status = 'I', updated_date = '2023-12-02 02:16:42' where file_name = 'extra_column_sales_data_2023-11-13.csv';", " UPDATE spark_project.product_staging_table SET status = 'I', updated_date = '2023-12-02 02:16:42' where file_name = 'sales_data.csv';", " UPDATE spark_project.product_staging_table SET status = 'I', updated_date = '2023-12-02 02:16:42' where file_name = 'sales_data2.csv';", " UPDATE spark_project.product_staging_table SET status = 'I', updated_date = '2023-12-02 02:16:42' where file_name = 'sales_data5.csv';"]
+2023-12-02 02:26:52,695 - INFO - Connection to MySQL connection
+2023-12-02 02:26:52,711 - INFO - Connected to MySQL successfully.
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2023-08
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2023-09
+Deleted folder: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\sale_month=2023-10
+Deleted file: D:\Projects\PycharmProjects\Spark_project_1\data\sales_partition_data\_SUCCESS
+Press Enter to terminate.
+2023-12-02 02:27:58,870 - INFO - Closing down clientserver connection
+
+Process finished with exit code 0
