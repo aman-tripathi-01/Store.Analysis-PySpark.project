@@ -49,3 +49,5 @@ customer_data_mart_local_file = "D:\\Projects\\PycharmProjects\\Spark_project_1\
 sales_team_data_mart_local_file = "D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\sales_team_data_mart\\"
 sales_team_data_mart_partitioned_local_file = "D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\sales_partition_data\\"
 error_folder_path_local = "D:\\Projects\\PycharmProjects\\Spark_project_1\\data\\error_files\\"
+
+
